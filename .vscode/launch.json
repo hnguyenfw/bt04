@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-LoombokApplication<loombok>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "nguyen.loombok.LoombokApplication",
+            "projectName": "loombok",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

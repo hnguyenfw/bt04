@@ -1,0 +1,17 @@
+package nguyen.loombok.config;
+
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class WebConfig {
+
+    @Bean
+    public FilterRegistrationBean<SiteMeshConfig> siteMeshFilter() {
+        FilterRegistrationBean<SiteMeshConfig> filterRegistrationBean = new FilterRegistrationBean<>();
+        filterRegistrationBean.setFilter(new SiteMeshConfig());
+        filterRegistrationBean.addUrlPatterns("/*");
+        return filterRegistrationBean;
+    }
+}
